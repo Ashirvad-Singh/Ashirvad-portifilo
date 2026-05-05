@@ -3,7 +3,7 @@ import { TechSphere } from "./TechSphere";
 
 export function About() {
   return (
-    <section id="about" className="relative mx-auto max-w-6xl px-6 py-28">
+    <section id="about" className="relative mx-auto max-w-6xl px-6 py-20 md:py-24">
       <div className="grid gap-12 md:grid-cols-2 md:items-center">
         <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">About</p>

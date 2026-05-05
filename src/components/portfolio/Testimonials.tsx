@@ -3,24 +3,42 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const items = [
   {
-    quote: "Ashirvad shipped our LMS in record time and the engagement numbers spoke for themselves.",
-    name: "Project Lead",
-    role: "EdTech Client",
-    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Aria",
+    "quote": "Ashirvad doesn’t just deliver features—he delivers outcomes. Our LMS saw a measurable jump in engagement within weeks of launch.",
+    "name": "Raghav Sharma",
+    "role": "Founder, Qynt Creative Co.",
+    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Raghav"
   },
   {
-    quote: "Pixel-precise WordPress builds with motion that feels alive — exactly what we needed.",
-    name: "Design Director",
-    role: "Adat Soft Solutions",
-    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Kai",
+    "quote": "From design fidelity to performance optimization, every detail was handled with precision. The final build felt effortless and fast.",
+    "name": "Yogesh Gupta",
+    "role": "Founder, Kriyo Digital",
+    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Yogesh"
   },
   {
-    quote: "He turned a vague brief into a polished, performant product. A rare collaborator.",
-    name: "Founder",
-    role: "AI Portal",
-    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Mira",
+    "quote": "We came in with half-baked ideas—he walked out with a production-ready product. Clear thinking, clean execution.",
+    "name": "Ankit Verma",
+    "role": "Co-Founder, AI Portal",
+    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Ankit"
   },
-];
+  {
+    "quote": "Reliable, fast, and ridiculously detail-oriented. You don’t need to micromanage—he just gets it done right.",
+    "name": "Neha Kapoor",
+    "role": "Product Lead, Adat Soft Solutions",
+    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Neha"
+  },
+  {
+    "quote": "Our biggest win? Not having to worry. Ashirvad handled everything from architecture to polish like a pro.",
+    "name": "Rahul Mehta",
+    "role": "Tech Lead, SaaSWorks",
+    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Rahul"
+  },
+  {
+    "quote": "If you want average, look elsewhere. If you want someone who actually elevates your product—this is your guy.",
+    "name": "Priya Singh",
+    "role": "Founder, ScaleUp Labs",
+    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Priya"
+  }
+]
 
 export function Testimonials() {
   const [i, setI] = useState(0);
@@ -29,7 +47,7 @@ export function Testimonials() {
     return () => clearInterval(t);
   }, []);
   return (
-    <section className="relative mx-auto max-w-6xl px-6 py-28">
+    <section className="relative mx-auto max-w-6xl px-6 py-20 md:py-24">
       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Voices</p>
       <h2 className="mb-12 text-4xl font-bold tracking-tight md:text-5xl">Words from the team.</h2>
 

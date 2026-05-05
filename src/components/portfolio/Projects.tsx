@@ -17,8 +17,8 @@ export function Projects() {
   }, []);
 
   return (
-    <section id="work" className="relative mx-auto max-w-6xl px-6 py-28">
-      <div className="mb-16 flex items-end justify-between">
+    <section id="work" className="relative mx-auto max-w-6xl px-6 py-20 md:py-24">
+      <div className="mb-12 flex items-end justify-between">
         <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Work</p>
           <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Curated from GitHub.</h2>

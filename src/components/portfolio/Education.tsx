@@ -35,9 +35,9 @@ export function Education() {
   }, []);
 
   return (
-    <section ref={ref} id="education" className="relative mx-auto max-w-6xl px-6 py-28">
+    <section ref={ref} id="education" className="relative mx-auto max-w-6xl px-6 py-20 md:py-24">
       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Education</p>
-      <h2 className="mb-16 text-4xl font-bold tracking-tight md:text-5xl">Academic foundation.</h2>
+      <h2 className="mb-12 text-4xl font-bold tracking-tight md:text-5xl">Academic foundation.</h2>
       <div className="relative pl-8 md:pl-12">
         <div className="absolute left-2 top-2 h-full w-px bg-gradient-to-b from-[#aeefff] via-[#d8b4fe] to-[#fbcfe8]" />
         {items.map((it) => (

@@ -64,7 +64,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative grain mx-auto flex min-h-[70vh] w-full items-center justify-center overflow-hidden bg-hero pt-28 md:pt-32"
+      className="relative grain mx-auto flex min-h-[64vh] w-full items-center justify-center overflow-hidden bg-hero pt-24 md:pt-28"
     >
       <HeroBackground />
 
@@ -87,15 +87,15 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 flex w-full max-w-6xl flex-col items-center px-6 pb-20 text-center">
-        <span className="mb-6 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-foreground/70">
+      <div className="relative z-10 flex w-full max-w-6xl flex-col items-center px-6 pb-16 text-center">
+        <span className="mb-5 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-foreground/70">
           <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
           Available for new projects
         </span>
 
         <h1
           ref={titleRef}
-          className="select-none text-5xl font-bold leading-[0.9] tracking-tight sm:text-7xl md:text-[8rem]"
+          className="select-none text-5xl font-bold leading-[0.9] tracking-tight sm:text-7xl md:text-[7.25rem]"
           style={{ perspective: 1000 }}
         >
           {name.split("").map((ch, i) => (
@@ -105,7 +105,7 @@ export function Hero() {
           ))}
         </h1>
 
-        <p ref={subRef} className="mt-6 text-base text-foreground/60 sm:text-lg md:text-xl">
+        <p ref={subRef} className="mt-5 text-base text-foreground/60 sm:text-lg md:text-xl">
           <span className="text-gradient font-semibold">Web Developer</span>
           <span className="mx-3 text-foreground/30">|</span>
           <span className="text-gradient font-semibold">Problem Solver</span>
@@ -113,7 +113,7 @@ export function Hero() {
           <span className="text-gradient font-semibold">Tech Enthusiast</span>
         </p>
 
-        <div ref={ctaRef} className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <div ref={ctaRef} className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <MagneticButton onClick={() => document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })}>
             View Work <ArrowUpRight className="h-4 w-4" />
           </MagneticButton>

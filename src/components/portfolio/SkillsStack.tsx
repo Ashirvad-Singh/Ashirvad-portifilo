@@ -87,9 +87,9 @@ export function SkillsStack() {
   }, []);
 
   return (
-    <section id="skills" ref={wrap} className="relative mx-auto max-w-6xl px-6 py-28">
+    <section id="skills" ref={wrap} className="relative mx-auto max-w-6xl px-6 py-20 md:py-24">
       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Skills</p>
-      <h2 className="mb-16 text-4xl font-bold tracking-tight md:text-5xl">
+      <h2 className="mb-12 text-4xl font-bold tracking-tight md:text-5xl">
         Tools shaped by years of building.
       </h2>
       <div className="relative space-y-6">

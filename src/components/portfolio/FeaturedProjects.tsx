@@ -27,9 +27,9 @@ const featured = [
 
 export function FeaturedProjects() {
   return (
-    <section className="relative mx-auto max-w-6xl px-6 py-20">
+    <section className="relative mx-auto max-w-6xl px-6 py-16 md:py-20">
       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Featured</p>
-      <h2 className="mb-12 text-4xl font-bold tracking-tight md:text-5xl">Selected case studies.</h2>
+      <h2 className="mb-10 text-4xl font-bold tracking-tight md:text-5xl">Selected case studies.</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {featured.map((f) => (
           <div
