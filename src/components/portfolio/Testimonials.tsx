@@ -21,22 +21,10 @@ const items = [
     "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Ankit"
   },
   {
-    "quote": "Reliable, fast, and ridiculously detail-oriented. You don’t need to micromanage—he just gets it done right.",
-    "name": "Neha Kapoor",
-    "role": "Product Lead, Adat Soft Solutions",
-    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Neha"
-  },
-  {
     "quote": "Our biggest win? Not having to worry. Ashirvad handled everything from architecture to polish like a pro.",
     "name": "Rahul Mehta",
-    "role": "Tech Lead, SaaSWorks",
+    "role": "Founder,MV Sports",
     "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Rahul"
-  },
-  {
-    "quote": "If you want average, look elsewhere. If you want someone who actually elevates your product—this is your guy.",
-    "name": "Priya Singh",
-    "role": "Founder, ScaleUp Labs",
-    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Priya"
   }
 ]
 
