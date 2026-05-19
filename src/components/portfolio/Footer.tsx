@@ -47,7 +47,7 @@ export function Footer() {
               <Github className="h-4 w-4" /> GitHub
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/ashirvad-singh-255491214/"
               className="flex items-center gap-2 text-foreground/70 hover:text-foreground"
             >
               <Linkedin className="h-4 w-4" /> LinkedIn
