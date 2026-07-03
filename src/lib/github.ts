@@ -10,6 +10,7 @@ export interface Repo {
   topics: string[];
   stargazers_count: number;
   forks_count: number;
+  watchers_count: number;
   owner: { login: string; avatar_url: string };
   homepage: string | null;
 }
