@@ -3,30 +3,48 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const items = [
   {
-    "quote": "Ashirvad doesn’t just deliver features—he delivers outcomes. Our LMS saw a measurable jump in engagement within weeks of launch.",
-    "name": "Raghav Sharma",
-    "role": "Founder, Qynt Creative Co.",
-    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Raghav"
+    quote:
+      "Ashirvad transformed our alumni platform into a modern, user-friendly experience. The performance improvements, custom WordPress development, and attention to detail exceeded our expectations.",
+    name: "Dr S.K. Sarin",
+    role: "Project Coordinator, ILBS Alumni",
+    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Rajeev",
   },
   {
-    "quote": "From design fidelity to performance optimization, every detail was handled with precision. The final build felt effortless and fast.",
-    "name": "Yogesh Gupta",
-    "role": "Founder, Kriyo Digital",
-    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Yogesh"
+    quote:
+      "Our restaurant needed a website that felt as premium as the dining experience itself. Ashirvad delivered an elegant, fast, and responsive website that our customers genuinely love browsing.",
+    name: "Davin Kapoor",
+    role: "Owner, Roadhouse Cafe",
+    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Rohit",
   },
   {
-    "quote": "We came in with half-baked ideas—he walked out with a production-ready product. Clear thinking, clean execution.",
-    "name": "Ankit Verma",
-    "role": "Co-Founder, AI Portal",
-    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Ankit"
+    quote:
+      "Working with Ashirvad was seamless from start to finish. He built a clean, scalable frontend that perfectly reflected our corporate identity while keeping performance top-notch.",
+    name: "Tushar Sharma",
+    role: "Director, Charta International",
+    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Amit",
   },
   {
-    "quote": "Our biggest win? Not having to worry. Ashirvad handled everything from architecture to polish like a pro.",
-    "name": "Rahul Mehta",
-    "role": "Founder,MV Sports",
-    "img": "https://api.dicebear.com/7.x/notionists/svg?seed=Rahul"
-  }
-]
+    quote:
+      "We wanted a website that captured our creative energy without sacrificing speed. The final result was visually stunning, responsive, and incredibly smooth across all devices.",
+    name: "Arjit",
+    role: "Founder, Metal Cat Music",
+    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Jason",
+  },
+  {
+    quote:
+      "Ashirvad built a high-performance platform that helped showcase our services professionally while significantly improving SEO and overall user experience.",
+    name: "Arjit Bhat",
+    role: "Founder, GigLab SoundWorks",
+    img: "https://api.dicebear.com/7.x/notionists/svg?seed=David",
+  },
+  {
+    quote:
+      "From planning to deployment, every stage was handled professionally. The website looks modern, loads quickly, and has already helped us attract more students online.",
+    name: "Rahul Gill",
+    role: "Founder, MV Sports Tohana",
+    img: "https://api.dicebear.com/7.x/notionists/svg?seed=Rahul",
+  },
+];
 
 export function Testimonials() {
   const [i, setI] = useState(0);
@@ -40,20 +58,17 @@ export function Testimonials() {
       <h2 className="mb-12 text-4xl font-bold tracking-tight md:text-5xl">Words from the team.</h2>
 
       <div className="grid items-center gap-12 md:grid-cols-[1fr_2fr]">
-        <div className="flex -space-x-4">
+        <div className="flex -space-x-3">
           {items.map((it, idx) => (
             <button
               key={idx}
               onClick={() => setI(idx)}
               data-cursor="hover"
-              className={`group relative h-20 w-20 overflow-hidden rounded-full border-4 border-white transition-all md:h-28 md:w-28 ${
+              className={`group relative h-10 w-10 overflow-hidden rounded-full border-2 border-white transition-all md:h-20 md:w-20 ${
                 idx === i ? "z-10 scale-110 shadow-xl" : "opacity-70 hover:opacity-100"
               }`}
             >
               <img src={it.img} alt={it.name} className="h-full w-full object-cover" />
-              <span className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-full bg-foreground/80 py-1 text-center text-[9px] font-medium text-background opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                {it.name}
-              </span>
             </button>
           ))}
         </div>
