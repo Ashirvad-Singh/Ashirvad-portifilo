@@ -49,11 +49,10 @@ export function FloatingNav() {
   ];
 
   return (
-    <div className="fixed bottom-8 left-1/2 z-[100] w-full -translate-x-1/2 px-4 md:w-auto md:px-0 pointer-events-auto">
+    <div className="fixed bottom-6 right-6 z-[100] md:bottom-8 md:left-1/2 md:right-auto md:-translate-x-1/2 md:px-0 pointer-events-auto">
       {/* 
-        For mobile, we use position absolute inside a fixed container so it expands upwards.
-        We adjust the container width to be 100% on mobile so the button can be placed on the right,
-        but on desktop it auto-sizes.
+        For mobile, it is positioned bottom-right.
+        For desktop, it is centered at the bottom.
       */}
       <FloatingDock items={links} desktopClassName="shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)]" />
     </div>
