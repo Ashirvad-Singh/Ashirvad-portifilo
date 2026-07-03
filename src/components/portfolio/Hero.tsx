@@ -64,7 +64,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative grain mx-auto flex min-h-[64vh] w-full items-center justify-center overflow-hidden bg-hero pt-24 md:pt-28"
+      className="relative grain mx-auto flex min-h-[50vh] md:min-h-[64vh] w-full items-center justify-center overflow-hidden bg-hero pt-20 pb-10 md:pt-28 md:pb-0"
     >
       <HeroBackground />
 
@@ -87,15 +87,15 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 flex w-full max-w-6xl flex-col items-center px-6 pb-16 text-center">
-        <span className="mb-5 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-foreground/70">
+      <div className="relative z-10 flex w-full max-w-6xl flex-col items-center px-6 pb-8 md:pb-16 text-center">
+        <span className="mb-4 md:mb-5 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-foreground/70">
           <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
           Available for new projects
         </span>
 
         <h1
           ref={titleRef}
-          className="select-none text-5xl font-bold leading-[0.9] tracking-tight sm:text-7xl md:text-[7.25rem]"
+          className="select-none text-[2.75rem] font-bold leading-[1.1] tracking-tight sm:text-6xl md:text-[7.25rem] md:leading-[0.9]"
           style={{ perspective: 1000 }}
         >
           {name.split("").map((ch, i) => (
@@ -105,11 +105,11 @@ export function Hero() {
           ))}
         </h1>
 
-        <p ref={subRef} className="mt-5 text-base text-foreground/60 sm:text-lg md:text-xl">
+        <p ref={subRef} className="mt-4 md:mt-5 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-foreground/60 sm:text-lg md:text-xl md:gap-x-3">
           <span className="text-gradient font-semibold">Web Developer</span>
-          <span className="mx-3 text-foreground/30">|</span>
+          <span className="hidden text-foreground/30 md:inline">|</span>
           <span className="text-gradient font-semibold">Problem Solver</span>
-          <span className="mx-3 text-foreground/30">|</span>
+          <span className="hidden text-foreground/30 md:inline">|</span>
           <span className="text-gradient font-semibold">Tech Enthusiast</span>
         </p>
 

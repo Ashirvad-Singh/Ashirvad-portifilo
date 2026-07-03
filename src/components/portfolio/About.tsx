@@ -1,5 +1,5 @@
 import { Counter } from "./Counter";
-import { TechSphere } from "./TechSphere";
+import { AboutGlobe } from "./AboutGlobe";
 
 export function About() {
   return (
@@ -18,8 +18,8 @@ export function About() {
           </p>
         </div>
 
-        <div className="flex justify-center">
-          <TechSphere />
+        <div className="flex justify-center relative w-full h-full min-h-[300px]">
+          <AboutGlobe />
         </div>
       </div>
     </section>
